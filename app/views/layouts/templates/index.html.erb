@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) if content_for?(:title) %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%= stylesheet_link_tag 'templates/application', media: 'all' %>
+  </head>
+
+  <body>
+    <div class="templates">
+      <div class="templates__container">
+        <h1 class="templates__header"><%= yield(:title) if content_for?(:title) %></h1>
+      </div>
+
+      <%= yield %>
+    </div>
+  </body>
+</html>
