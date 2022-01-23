@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Templates::Engine, at: '/'
+  mount Templates::Engine => '/'
 end
