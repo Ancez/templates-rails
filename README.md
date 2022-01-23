@@ -21,6 +21,13 @@ Or install it yourself as:
 
     $ gem install templates-rails
 
+Run
+
+    $ rake templates:install
+- This will add the templates engine to your routes by adding:
+  - `mount Templates::Engine => '/'`
+- And will generate `views/templates/example` and `/views/templates/example.html.erb`
+
 ## Usage
 
 TODO: Write usage instructions here
