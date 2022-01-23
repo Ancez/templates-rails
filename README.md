@@ -26,11 +26,13 @@ Run
     $ rake templates:install
 - This will add the templates engine to your routes by adding:
   - `mount Templates::Engine => '/'`
-- And will generate `views/templates/example` and `/views/templates/example.html.erb`
+- And will automatically generate `views/templates/example` directory and an example `.html.erb` file `/views/templates/example.html.erb`
+- It will also generate empty `partials` directories to showcase that you can still partialise your design views with a structure
+- `partials` directories are excluded from being shown within the indexes
 
 ## Usage
 
-TODO: Write usage instructions here
+The rake task mentioned above generates examples for you to edit, delete and/or copy from.
 
 ## Development
 
