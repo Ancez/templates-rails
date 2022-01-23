@@ -51,10 +51,12 @@
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
+  min-height: 60px;
   width: 100%;
 }
 
 .templates__header div h1 {
+  margin: 6px 0;
   padding: 0 24px;
 }
 
