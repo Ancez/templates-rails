@@ -1,15 +1,7 @@
 <% provide(:title, params[:id].gsub('/', ' / ').titleize) %>
 
-<div class="page-container">
-  <div class="my--7">
-    <%= link_to templates_path do %>
-      <i class="fas fa-arrow-circle-left mr--2"></i>Go Back
-    <% end %>
-  </div>
-
-  <div class="display--grid grid-col--6 gap--8">
-    <% Dir.children("./app/views/templates/#{params[:id]}").excluding('partials').sort.each do |child| %>
-      <%= link_to child.chomp('.html.erb').humanize.titleize, template_path("#{params[:id]}/#{child.chomp('.html.erb')}"), class: 'button button--blue' %>
-    <% end %>
-  </div>
+<div>
+  <% Dir.children("./app/views/templates/#{params[:id]}").excluding('partials').sort.each do |child| %>
+    <%= link_to child.chomp('.html.erb').humanize.titleize, template_path("#{params[:id]}/#{child.chomp('.html.erb')}"), class: 'button button--blue' %>
+  <% end %>
 </div>

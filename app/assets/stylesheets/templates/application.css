@@ -15,13 +15,57 @@
  */
 
 .templates {
-  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-.templates__container {
+.templates a {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #8989d7;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  color: #8989d7;
+  display: block;
+  margin: 12px;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition: color, background-color 300ms ease;
+}
 
+.templates a:hover {
+  background-color: #8989d7;
+  color: #ffffff;
 }
 
 .templates__header {
+  background-color: #a1a1ca;
+  border-bottom: 1px solid #8989d7;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
 
+.templates__header div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.templates__header div h1 {
+  padding: 0 24px;
+}
+
+.templates__content {
+  display: flex;
+  justify-content: center;
+}
+
+.templates__content div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  width: 100%;
 }

@@ -1,9 +1,7 @@
 <% provide(:title, 'Templates') %>
 
-<div class="page-container mt--8">
-  <div class="display--grid grid-col--6 gap--8">
-    <% Dir.children('./app/views/templates').excluding('index.html.erb', 'partials', 'template').sort.each do |child| %>
-      <%= link_to child.chomp('.html.erb').humanize.titleize, template_path(child.chomp('.html.erb')), class: 'button button--blue' %>
-    <% end %>
-  </div>
+<div>
+  <% Dir.children('./app/views/templates').excluding('index.html.erb', 'partials', 'template').sort.each do |child| %>
+    <%= link_to child.chomp('.html.erb').humanize.titleize, template_path(child.chomp('.html.erb')), class: 'button button--blue' %>
+  <% end %>
 </div>

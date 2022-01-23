@@ -7,12 +7,15 @@
     <%= stylesheet_link_tag 'templates/application', media: 'all' %>
   </head>
 
-  <body>
-    <div class="templates">
-      <div class="templates__container">
-        <h1 class="templates__header"><%= yield(:title) if content_for?(:title) %></h1>
+  <body class="templates">
+    <div class="templates__header">
+      <div>
+        <h1><%= yield(:title) if content_for?(:title) %></h1>
+        <%= link_to 'Go Back', templates_path if params[:id].present? %>
       </div>
+    </div>
 
+    <div class="templates__content">
       <%= yield %>
     </div>
   </body>
