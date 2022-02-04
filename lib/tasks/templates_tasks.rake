@@ -1,4 +1,11 @@
-# desc 'Explaining what the task does'
-# task :templates do
-#   # Task goes here
-# end
+namespace :templates do
+  desc 'Install Templates'
+  task :install do
+    if Rails.root.join('config/routes.rb').exist?
+      Rake::Task['templates:install'].invoke
+    else
+      puts 'config/routes.rb file found'
+    end
+  end
+end
+
