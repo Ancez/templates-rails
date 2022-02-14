@@ -5,6 +5,8 @@
 
 Simple to use templating system for your Rails application. Design your views before implementation.
 
+Dummy can be viewed [here](https://templates-rails.herokuapp.com/).
+
 ## Installation
 
 Add this line to your application's Gemfile:
