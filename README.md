@@ -31,6 +31,13 @@ Run
 - It will also generate empty `partials` directories to showcase that you can still partialise your design views with a structure
 - `partials` directories are excluded from being shown within the indexes
 
+## TODO
+- Finish the install rake task
+- Update install rake task to include adding the `application.css` asset to `assets.rb` initializer
+- Think about how to do application headers and footers as it isn't good enough to make the developers render these as partials in every template
+  - setup a rake task for generating the layouts so users can adjust these to include headers & footers etc. from inside their application
+- Finish the specs
+
 ## Usage
 
 The rake task mentioned above generates examples for you to edit, delete and/or copy from.
