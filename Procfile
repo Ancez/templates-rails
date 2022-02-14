@@ -1,1 +1,1 @@
-web: bundle exec puma
+web: bundle exec rails s
