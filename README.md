@@ -1,5 +1,5 @@
 # Templates
-[![Gem Version](http://img.shields.io/gem/v/templates-rails.svg)](https://github.com/Ancez/templates-rails/blob/master/CHANGELOG.md)
+[![Gem Version](http://img.shields.io/gem/v/templates-rails.svg)](https://rubygems.org/gems/templates-rails)
 [![Rspec](https://github.com/Ancez/templates-rails/actions/workflows/rspec.yml/badge.svg)](https://github.com/Ancez/templates-rails/actions/workflows/rspec.yml)
 [![Ruby Gem](https://github.com/Ancez/templates-rails/actions/workflows/gem-push.yml/badge.svg)](https://rubygems.org/gems/templates-rails)
 
