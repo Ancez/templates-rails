@@ -23,9 +23,9 @@
 .templates a {
   background-color: #ffffff;
   border-radius: 5px;
-  border: 1px solid #8989d7;
+  border: 1px solid #3D7EB8;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  color: #8989d7;
+  color: #3D7EB8;
   display: block;
   margin: 12px;
   padding: 8px 12px;
@@ -34,13 +34,13 @@
 }
 
 .templates a:hover {
-  background-color: #8989d7;
+  background-color: #3D7EB8;
   color: #ffffff;
 }
 
 .templates__header {
-  background-color: #a1a1ca;
-  border-bottom: 1px solid #8989d7;
+  background-color: #5893C7;
+  border-bottom: 1px solid #3D7EB8;
   color: #ffffff;
   display: flex;
   justify-content: center;
