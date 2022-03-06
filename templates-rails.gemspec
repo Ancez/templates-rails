@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/Ancez/templates-rails'
-  spec.metadata['changelog_uri'] = 'https://github.com/Ancez/templates-rails/CHANGELOG.md'
+  spec.metadata['changelog_uri'] = 'https://github.com/Ancez/templates-rails/blob/master/CHANGELOG.md'
 
   spec.files = Dir['{app,config,db,lib}/**/*', 'spec', 'LICENSE.txt', 'Rakefile', 'README.md']
 
