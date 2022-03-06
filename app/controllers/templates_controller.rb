@@ -1,4 +1,4 @@
-class Templates::TemplatesController < ApplicationController
+class TemplatesController < ActionController::Base
   def index
     render :index, layout: 'templates/index'
   end

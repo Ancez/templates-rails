@@ -1,4 +1,4 @@
 Templates::Engine.routes.draw do
   root 'templates#index'
-  resources :templates, only: [:index, :show]
+  get ':id', to: 'templates#show', as: :template
 end

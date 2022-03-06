@@ -8,7 +8,7 @@ Dummy can be viewed [here](https://templates-rails.herokuapp.com/).
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile under the `:development` group:
 
 ```ruby
 gem 'templates-rails'
@@ -16,31 +16,20 @@ gem 'templates-rails'
 
 And then execute:
 
-    $ bundle install
+    bundle install
 
 Or install it yourself as:
 
-    $ gem install templates-rails
-
-Run
-
-    $ rake templates:install
-- This will add the templates engine to your routes by adding:
-  - `mount Templates::Engine => '/'`
-- And will automatically generate `views/templates/example` directory and an example `.html.erb` file `/views/templates/example.html.erb`
-- It will also generate empty `partials` directories to showcase that you can still partialise your design views with a structure
-- `partials` directories are excluded from being shown within the indexes
+    gem install templates-rails --group development
 
 ## TODO
-- Finish the install rake task
-- Update install rake task to include adding the `application.css` asset to `assets.rb` initializer
-- Think about how to do application headers and footers as it isn't good enough to make the developers render these as partials in every template
-  - setup a rake task for generating the layouts so users can adjust these to include headers & footers etc. from inside their application
+- Finish the install rake task to generate the `templates` directory
+- Setup a rake task for generating the layouts so users can pick their layouts
 - Finish the specs
 
 ## Usage
+- `partials` directories get ignored within the `views/templates` directory
 
-The rake task mentioned above generates examples for you to edit, delete and/or copy from.
 
 ## Development
 

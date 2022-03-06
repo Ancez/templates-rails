@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    templates-rails (0.1.0)
+    templates-rails (0.1.1)
       rails
 
 GEM
@@ -160,7 +160,7 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.5.3)
+    zeitwerk (2.5.4)
 
 PLATFORMS
   x86_64-darwin-20
