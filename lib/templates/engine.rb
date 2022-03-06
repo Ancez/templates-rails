@@ -1,10 +1,8 @@
 module Templates
   class Engine < ::Rails::Engine
-    isolate_namespace Templates
-
     initializer 'templates', before: :load_config_initializers do
       Rails.application.routes.append do
-        mount Templates::Engine => '/'
+        mount Templates::Engine => '/templates'
       end
     end
 

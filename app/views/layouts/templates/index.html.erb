@@ -11,7 +11,7 @@
     <div class="templates__header">
       <div>
         <h1><%= yield(:title) if content_for?(:title) %></h1>
-        <%= link_to 'Go Back', templates_path if params[:id].present? %>
+        <%= link_to 'Go Back', templates_engine.root_path if params[:id].present? %>
       </div>
     </div>
 
