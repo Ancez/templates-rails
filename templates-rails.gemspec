@@ -17,4 +17,5 @@ Gem::Specification.new do |spec|
   spec.files = Dir['{app,config,db,lib}/**/*', 'spec', 'LICENSE.txt', 'Rakefile', 'README.md']
 
   spec.add_dependency 'rails'
+  spec.test_files = Dir["spec/**/*"]
 end
