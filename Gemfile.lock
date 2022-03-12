@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    templates-rails (0.1.1)
+    templates-rails (0.1.2)
       rails
 
 GEM
