@@ -1,6 +1,7 @@
 # Templates
 [![Gem Version](https://badge.fury.io/rb/templates-rails.svg)](https://badge.fury.io/rb/templates-rails)
 [![Rspec](https://github.com/Ancez/templates-rails/actions/workflows/rspec.yml/badge.svg)](https://github.com/Ancez/templates-rails/actions/workflows/rspec.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/ancez/templates-rails/badge)](https://www.codefactor.io/repository/github/ancez/templates-rails)
 
 Simple to use templating system for your Rails application. Design your views before implementation.
 
