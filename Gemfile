@@ -10,6 +10,7 @@ gem 'puma'
 gem 'sprockets-rails'
 gem 'rspec-rails'
 gem 'capybara'
+gem 'byebug'
 
 # Start debugger with binding.b [https://github.com/ruby/debug]
 # gem "debug", ">= 1.0.0"

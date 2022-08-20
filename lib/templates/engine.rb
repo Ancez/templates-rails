@@ -6,8 +6,10 @@ module Templates
       end
     end
 
-    initializer 'templates.assets.precompile' do |app|
-      app.config.assets.precompile += %w( templates/application.css )
+    initializer 'templates.assets' do
+      if Rails.application.config.respond_to?(:assets)
+        Rails.application.config.assets.precompile += %w( templates/application.css )
+      end
     end
   end
 end
