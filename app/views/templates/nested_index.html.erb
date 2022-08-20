@@ -2,6 +2,6 @@
 
 <div>
   <% Dir.children("./app/views/templates/#{params[:id]}").excluding('partials').sort.each do |child| %>
-    <%= link_to child.chomp('.html.erb').humanize.titleize, templates_engine.template_path("#{params[:id]}/#{child.chomp('.html.erb')}"), class: 'button button--blue' %>
+    <%= link_to child.chomp('.html.erb').humanize.titleize, templates_engine.template_path('') + params[:id] + '/' + child.chomp('.html.erb'), class: 'button button--blue' %>
   <% end %>
 </div>
