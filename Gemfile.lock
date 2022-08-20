@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    templates-rails (0.1.2)
+    templates-rails (0.1.3)
       rails
 
 GEM
@@ -183,9 +183,9 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    strscan (3.0.1)
+    strscan (3.0.4)
     thor (1.2.1)
-    timeout (0.2.0)
+    timeout (0.3.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     websocket-driver (0.7.5)
