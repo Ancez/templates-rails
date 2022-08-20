@@ -1,3 +1,9 @@
+### 0.1.3 - 20-08-2022
+* enhancements
+  * Improved the URL formatting for deeply nested directories & files
+* bug fixes
+* fixes assets pipeline limitation. adds support for PropShaft etc.
+
 ### 0.1.2 - 12-03-2022
 * enhancements
   * Added Rspec & Capybara
