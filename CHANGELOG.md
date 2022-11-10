@@ -1,3 +1,7 @@
+### 0.1.31 - 10-11-2022
+* improved templates:install task
+* fixed a broken readme link
+
 ### 0.1.3 - 20-08-2022
 * enhancements
   * Improved the URL formatting for deeply nested directories & files
