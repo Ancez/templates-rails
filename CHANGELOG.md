@@ -1,4 +1,4 @@
-### 0.1.31 - 10-11-2022
+### 0.1.4 - 10-11-2022
 * improved templates:install task
 * fixed a broken readme link
 
