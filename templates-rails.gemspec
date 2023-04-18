@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.metadata['source_code_uri'] = 'https://github.com/Ancez/templates-rails'
   spec.metadata['changelog_uri'] = 'https://github.com/Ancez/templates-rails/blob/master/CHANGELOG.md'
 
-  spec.files = Dir['app/**/*', 'config/**/*', 'lib/**/*']
+  spec.files = Dir['{app,config,db,lib}/**/*', 'LICENSE.txt', 'CODE_OF_CONDUCT.md', 'Rakefile', 'README.md'] - Dir['spec/**/*']
 
   spec.add_dependency 'rails'
   spec.test_files = Dir["spec/**/*"]
