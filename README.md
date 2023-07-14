@@ -1,27 +1,28 @@
 # Templates
 [![Gem Version](https://badge.fury.io/rb/templates-rails.svg)](https://badge.fury.io/rb/templates-rails)
 [![Rspec](https://github.com/Ancez/templates-rails/actions/workflows/rspec.yml/badge.svg)](https://github.com/Ancez/templates-rails/actions/workflows/rspec.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/ancez/templates-rails/badge)](https://www.codefactor.io/repository/github/ancez/templates-rails)
 
 Simple to use templating system for your Rails application. Design your views before implementation.
 
-Dummy can be viewed [here](https://templates-rails.herokuapp.com/).
-
 ## Installation
 
-Add this line to your application's Gemfile under the `:development` group:
+Add follow line to your Gemfile under the `:development` group and run `bundle install`
 
 ```ruby
 gem 'templates-rails'
 ```
 
-And then execute:
-
-    bundle install
-
 Or install it yourself as:
 
     gem install templates-rails --group development
+
+
+## Setup
+To override the default inheritance controller for e.g. compatibility with tenant based applications where there is a differently named inheritance controller copy the line below to your desired environment (most likely `development.rb`). Our default is set to `ApplicationController` as it's commonly used. If you don't have an `ApplicationController`, set the `parent_controller` to e.g. `ActionController::Base`
+
+```ruby
+Templates.parent_controller = 'ApplicationController'
+```
 
 ## TODO
 - Finish the install rake task to generate the `templates` directory
@@ -30,7 +31,6 @@ Or install it yourself as:
 
 ## Usage
 - `partials` directories get ignored within the `views/templates` directory
-
 
 ## Development
 
