@@ -1,15 +1,19 @@
+### 0.1.5 - 14-07-2023
+* Added Templates.parent_controller configuration option
+* Fixed CI and updated checkout/branch strategy from V2 to V3
+* Updated README.md with a better description and usage instructions
 ### 0.1.4 - 10-11-2022
-* improved templates:install task
-* fixed a broken readme link
+* Improved templates:install task
+* Fixed a broken readme link
 
 ### 0.1.3 - 20-08-2022
-* enhancements
+* Enhancements
   * Improved the URL formatting for deeply nested directories & files
-* bug fixes
-* fixes assets pipeline limitation. adds support for PropShaft etc.
+* Bug fixes
+* Fixes assets pipeline limitation. adds support for PropShaft etc.
 
 ### 0.1.2 - 12-03-2022
-* enhancements
+* Enhancements
   * Added Rspec & Capybara
     * Setup a very basic dummy test
 * Added a base font and increased sizes of template boxes via flex
@@ -17,8 +21,8 @@
 
 ### 0.1.1 - 06-03-2022
 
-* bug fixes
+* Bug fixes
   * Removed engine isolation (fix main app routes accessibility)
-* enhancements
+* Enhancements
   * Setup a dummy dashboard
   * Engine is now mounted automatically
