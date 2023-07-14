@@ -1,4 +1,4 @@
-class TemplatesController < ActionController::Base
+class TemplatesController < Templates.parent_controller.constantize
   def index
     render :index, layout: 'templates/index'
   end
