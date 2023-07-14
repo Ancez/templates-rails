@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     templates-rails (0.1.5)
-      rails (>= 7.0)
 
 GEM
   remote: https://rubygems.org/
@@ -206,6 +205,7 @@ DEPENDENCIES
   capybara
   pg
   puma
+  rails (~> 7.0, >= 7.0.0)
   rspec-rails
   sprockets-rails
   templates-rails!
