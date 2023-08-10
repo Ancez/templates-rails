@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors    = ['Lukasz Czapiewski']
   spec.email      = ['luke@mmtm.io']
   spec.homepage    = 'https://github.com/Ancez/templates-rails'
-  spec.summary     = 'Simple to use templating system for your Rails application. Design your views before implementation.'
-  spec.description = 'A templating system for creating and making design decisions for your Rails application. Make your design decisions before you build your application views.'
+  spec.summary     = 'View templating system for your Rails application. Design your app.'
+  spec.description = 'Create View templates and bootstrap interfaces in HTML without controllers. A system for creating and making design decisions. Make design decisions before building your app.'
   spec.license     = 'MIT'
 
   spec.metadata['homepage_uri'] = spec.homepage
