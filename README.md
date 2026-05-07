@@ -35,17 +35,17 @@ Templates.mount_at = '/admin/styleguide'
 Templates.views_path = 'admin/styleguide'
 
 # When true (default) the engine auto-mounts at `Templates.mount_at`. Set to false to
-# mount manually in your routes.rb (e.g. inside an authenticated scope).
+# mount manually in your routes.rb — useful when you only want the styleguide
+# available locally, or want to mount it inside a scope/constraint.
 Templates.auto_mount = false
 ```
 
-If you set `auto_mount = false`, mount the engine yourself:
+If you set `auto_mount = false`, mount the engine yourself. A common pattern is
+to expose the styleguide only in development and test:
 
 ```ruby
 # config/routes.rb
-authenticate :user, ->(u) { u.admin? } do
-  mount Templates::Engine => '/admin/styleguide'
-end
+mount Templates::Engine => '/admin/styleguide' if Rails.env.local?
 ```
 
 ## TODO
