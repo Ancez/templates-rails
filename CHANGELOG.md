@@ -1,5 +1,8 @@
 ## Changelog
 
+### 0.2.1 - 07-05-2026
+* **Bug fix**: Move the engine's bundled `index` and `nested_index` views from `app/views/templates/` to `app/views/templates/templates/` (matching the namespaced `Templates::TemplatesController` view path). Host apps with their own `app/views/templates/` views were shadowing the engine's templates, causing `MissingTemplate` errors at the engine root. No host-app changes are needed — Rails resolves the views via the controller's natural lookup path.
+
 ### 0.2.0 - 07-05-2026
 * **Breaking**: `TemplatesController` is now namespaced as `Templates::TemplatesController` to avoid collisions with controllers of the same name in host apps. Routes inside the engine point at `templates/templates#index` / `templates/templates#show` automatically; no host-app changes are needed unless you reference the controller class directly.
 * Added `Templates.mount_at` (default `/templates`) — configures the auto-mount path
