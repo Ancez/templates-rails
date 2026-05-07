@@ -1,5 +1,11 @@
 ## Changelog
 
+### 0.2.0 - 07-05-2026
+* **Breaking**: `TemplatesController` is now namespaced as `Templates::TemplatesController` to avoid collisions with controllers of the same name in host apps. Routes inside the engine point at `templates/templates#index` / `templates/templates#show` automatically; no host-app changes are needed unless you reference the controller class directly.
+* Added `Templates.mount_at` (default `/templates`) — configures the auto-mount path
+* Added `Templates.views_path` (default `templates`) — configures the directory under `app/views/` that the engine scans and renders from. Lets you point the engine at an existing styleguide views tree without moving files
+* Added `Templates.auto_mount` (default `true`) — set to `false` to mount the engine manually in the host app's `routes.rb` (e.g. behind a namespace or auth constraint)
+
 ### 0.1.5 - 14-07-2023
 * Added `Templates.parent_controller` configuration option
 * Fixed CI and updated checkout/branch strategy from V2 to V3

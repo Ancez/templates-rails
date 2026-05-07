@@ -1,8 +1,10 @@
 module Templates
   class Engine < ::Rails::Engine
     initializer 'templates', before: :load_config_initializers do
-      Rails.application.routes.append do
-        mount Templates::Engine => '/templates'
+      if Templates.auto_mount
+        Rails.application.routes.append do
+          mount Templates::Engine => Templates.mount_at
+        end
       end
     end
 
