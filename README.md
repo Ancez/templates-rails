@@ -18,10 +18,34 @@ Or install it yourself as:
 
 
 ## Setup
-To override the default inheritance controller for e.g. compatibility with tenant based applications where there is a differently named inheritance controller copy the line below to your desired environment (most likely `development.rb`). Our default is set to `ApplicationController` as it's commonly used. If you don't have an `ApplicationController`, set the `parent_controller` to e.g. `ActionController::Base`
+
+All configuration can go in an initializer (e.g. `config/initializers/templates.rb`) or in an environment file like `config/environments/development.rb`. All options have sensible defaults — set only what you need to change.
 
 ```ruby
+# Parent controller for Templates::TemplatesController. Default: 'ApplicationController'.
+# Change this for tenant-based apps or when you don't have an ApplicationController
+# (e.g. set to 'ActionController::Base').
 Templates.parent_controller = 'ApplicationController'
+
+# Path the engine mounts at. Default: '/templates'.
+Templates.mount_at = '/admin/styleguide'
+
+# Directory under app/views/ that the engine reads templates from. Default: 'templates'.
+# Set this to point the engine at an existing views tree without moving files.
+Templates.views_path = 'admin/styleguide'
+
+# When true (default) the engine auto-mounts at `Templates.mount_at`. Set to false to
+# mount manually in your routes.rb — useful when you only want the styleguide
+# available locally, or want to mount it inside a scope/constraint.
+Templates.auto_mount = false
+```
+
+If you set `auto_mount = false`, mount the engine yourself. A common pattern is
+to expose the styleguide only in development and test:
+
+```ruby
+# config/routes.rb
+mount Templates::Engine => '/admin/styleguide' if Rails.env.local?
 ```
 
 ## TODO

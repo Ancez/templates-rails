@@ -1,7 +1,7 @@
 <% provide(:title, 'Templates') %>
 
 <div>
-  <% Dir.children('./app/views/templates').excluding('partials').sort.each do |child| %>
+  <% Dir.children("./app/views/#{Templates.views_path}").excluding('partials').sort.each do |child| %>
     <%= link_to child.chomp('.html.erb').humanize.titleize, templates_engine.template_path(child.chomp('.html.erb')), class: 'button button--blue' %>
   <% end %>
 </div>
